@@ -148,7 +148,8 @@ p {
   /*----------- single-button --------*/
  
  .single-button a:hover{
- 	color:red;
+ 	 color: green;
+	
  }
 
 .single-button a{
@@ -333,15 +334,17 @@ p {
     width: 28rem;
 }
 
+.view-button a:hover{
+ 	 color: green;
+	
+ }
 .view-button.text-center {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 7rem;
 }
 
-.view-button a:hover{
-	color:red;
-}
+
 
 
    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
