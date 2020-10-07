@@ -5,7 +5,7 @@ html{
 
 body{
 	overflow-x: hidden;
-	font-family: 'Myriad Pro';
+	 
 	margin: 0;
 	font-size: 1.4rem;
 	font-weight: 400;
@@ -39,7 +39,7 @@ h2{
 
 p {
 	font-size: 1.4rem;
-	color: #d0d7d7;
+	color: #6c7979;
 	line-height: 21px;
 }
 
@@ -81,6 +81,15 @@ p {
 	z-index: 11;
 }
 
+.logo h2{
+	font-weight: 501;
+}
+
+.menu ul {
+	display: flex;
+	justify-content:end;
+}
+
 .menu ul li a {
 	color: #FFF;
 	text-transform: uppercase;
@@ -92,12 +101,16 @@ p {
 	position: relative;
 	z-index: 11;
 	transition: .5s;
+	font-weight: 501;
 }
 
 .menu ul li a:hover{
 	color:#43bca0;
 }
 
+.menu-icon{
+	display: none;
+}
 
 .menu ul li .active{
 	border-bottom:2px solid #FFF;
@@ -122,7 +135,7 @@ p {
 }
 
 .banner-content hr {
-	margin: 10px 260px;
+	margin: 10px 262px;
 	color: #FFF;
 	height: 2px;	 
 }
@@ -144,7 +157,7 @@ p {
 }
  .single-button {
 	position: absolute;
-	left: 43%;
+	left: 42%;
 	right: 50%;
 	bottom: -24px;
 }
@@ -162,10 +175,11 @@ p {
 .introduction-title h1 {
 	color: #1abc9c;
 	margin-bottom: 40px;
+	font-family: 'Myriad Pro';
 }
 
 .introduction-content h2 {
-	color: #d0d7d7;
+	color: #6c7979;
 	line-height: 30px;
 	margin: 0px 120px;
 	font-weight: 400;
@@ -178,7 +192,9 @@ p {
   /*!!!!!!! Skills workflow css !!!!!!!*/
  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 
- 
+.skills-workflow-content p{
+	font-size: 16px;
+}
 
 .skills-workflow-area .g-5, .gx-5 {
 	--bs-gutter-x: 9rem;
@@ -198,6 +214,7 @@ p {
 	color: #1abc9c;
 	margin-bottom: 2.5rem;
 	text-align: center;
+	font-family: 'Myriad Pro';
 }
 
 .skills-workflow-content p {
@@ -220,16 +237,17 @@ p {
 }
 
 .portfolio-area .g-5, .gx-5 {
-    --bs-gutter-x: 17rem;
-    margin-bottom: 91px;
+    --bs-gutter-x: 10rem;
+     
 }
 
 .portfolio-single-item {
 	position: relative;
-	margin-bottom: 25px;
+	margin-bottom: 7rem;
 }
-.portfolio-single-item{
+.portfolio-single-item {
 	position: relative;
+	overflow: hidden;
 }
 
 .portfolio-single-item:hover .work-overly{
@@ -268,33 +286,47 @@ p {
 .overly-icon ul li a {
 	width: 5rem;
 	height: 5rem;
-	background: #1abc9c;
+	background: #13d4aee8;
 	text-align: center;
-	font-size: 16px;
-	line-height: 47px;
+	line-height: 43px;
 	border: 3px solid #cce8e2;
 	display: inline-block;
 	margin-right: 20px;
 	margin-top: 20px;
+	color: #fff;
+	font-size: 2rem;
+	 
 }
 
-.main-overlycontent{
-	margin-top: 151px;
+.overly-icon ul li a i {
+	transform: rotate(81deg);
+}
+
+.main-overlycontent {
 	background: #1abc9c;
+	font-family: 'Rokkitt', serif;
+	margin-top: 13.6rem;
 }
 
 
-.overly-title h1{
-	 margin-top: 1.7rem;
-	 margin-left: 15px;
-	 font-family: 'Rokkitt', serif; 
+.sub-content{
+	padding:2rem;
 }
 
-.overly-content p {
-	color: #7a9892;
-	padding-bottom: 17px;
-	margin-left: 15px;
+.sub-content h3{
+	margin: 0;
+	padding:0;
+	line-height: 23px;
+	font-size: 3rem;
+	color: #FFF;
 }
+
+.sub-content p {
+	font-size: 2rem;
+	color: #534848;
+}
+
+ 
 
 /****** button css *****/
 .view-button a {
@@ -304,7 +336,7 @@ p {
 .view-button.text-center {
 	display: flex;
 	justify-content: center;
-	margin-top: 53px;
+	margin-bottom: 7rem;
 }
 
 .view-button a:hover{
@@ -331,13 +363,12 @@ p {
 	margin-bottom: 100px;
 }
 
-.contact-form .input1,
-.contact-form .input2 {
+.contact-form .input1, .contact-form .input2 {
 	width: 370px;
 	height: 70px;
 	background: #e4e8e8;
 	color: #cdc7c7;
-	padding: 3rem 3rem;
+	padding: 3rem 1.5rem;
 	font-size: 28px;
 	border: 2px solid #e4e8e8;
 	display: inline-block;
@@ -356,7 +387,8 @@ p {
 	color: #cdc7c7;
 	border: 2px solid #e4e8e8;
 	font-family: 'Rokkitt', serif;
-	font-size: 20px;
+	font-size: 30px;
+	padding: 1rem 1rem;
 }
 
 
@@ -388,17 +420,26 @@ p {
 .footer-icon {
 	position: absolute;
 	left: 0;
-	top: -17%;
+	top: -12%;
 	right: 0;
 	margin: 0px 168px;
 }
 
 .footer-icon ul li {
-	width: 10rem;
-	height: 10rem;
+	width: 9rem;
+	height: 9rem;
 	background: #FFF;
 	text-align: center;
 	padding-top: 20px;
 	border: 5px solid #1abc9c;
 
+}
+
+.footer-icon ul li a{
+
+}
+
+
+button:focus {
+    outline: none;
 }
