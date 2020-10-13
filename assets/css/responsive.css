@@ -1,6 +1,9 @@
-@media all and (min-width: 991px){
+@media all and (min-width: 992px){
 	.banner-content hr {
 	  margin: 8px 190px;
+	}
+	.menu ul{
+		display: flex !important;
 	}
 }
 
@@ -8,14 +11,38 @@
 	.menu {
 		display: none;
 	}
-	.menu ul{
+	.menu {
+		position: absolute;
+		top: 20%;
+		margin: 0 auto;
+		width: 80%;
+		left: 0;
+		right: 0;
+		background: #dddddddd;
+		z-index: 99;
+		border-radius: 0 0 1rem 1rem;
+	}
+
+	.menu ul {
 		justify-content: start;
 		flex-direction: column;
+		background: #e1cbcb6b;
+		text-align: center;
+		position: relative;
+		z-index: 111;
+		margin-left: 1rem;
 	}
 
 	.menu ul li {
 		margin-top: 1rem;
-		}
+	}
+	.menu ul li a{
+		color:#e74c3c;
+		margin-bottom: 1rem;
+	}
+	.menu ul li a:hover{
+		 color:black;
+	}
 
 	.logo{
 		display: flex;
@@ -51,8 +78,7 @@
 	}
 
 	.banner-content hr {
-		margin: 9px 125px;
-		 
+		margin: 9px 125px; 
 	}
 
 	.banner-text {
@@ -64,25 +90,10 @@
 
 	}
 
-	/****single button****/
-	.single-button{
-		left: 37%;
-	}
 
 	/***********form responsive*************/
-
 	
-	.contact-form .input1 {
-    	margin-right: 0;
-	}
-
-	.contact-form .input2{
-		margin-top: 2rem;
-	}
-
-	.contact-form .input3{
-		width: 569px;
-	}
+	 
 
 	.sub-content h3{
 		line-height: 13px;
@@ -96,6 +107,11 @@
 	
 	.sub-content p{
 		font-size: 1.9rem;
+	}
+
+	.input-f {
+		flex-direction: column;
+		row-gap: 1rem;
 	}
 }
 
@@ -120,9 +136,7 @@
 	}
 
 	/****single button****/
-	.single-button{
-		left: 32%;
-	}
+	 
 
 	/****works responsive*****/
 	.skills-workflow {
@@ -134,9 +148,7 @@
 	}
 
 	/***form responsive***/
-	.contact-form .input3 {
-		width: 520px;
-	}
+	 
 
 	/*footer icon responsive*/
 	.footer-icon ul li{
@@ -164,16 +176,19 @@
 	.main-overlycontent{
 		margin-top:13.6rem;
 	}
+	.menu {
+		top: 30%;
+	}
 
 
 } 
 
 
 @media all and (max-width: 575px){
-
 	.banner-content {
 		margin: 1.7rem 0;
 	}
+
 	.banner-content h1{
 		font-size: 2.5rem;
 	}
@@ -184,16 +199,7 @@
 
 	.banner-content hr {
 		display: none;
-	}
-
-	/****single button****/
-	.single-button{
-		left: 25%;
-	}
-
-	.btn-sty-1{
-		width: 20rem;
-	}
+	}	 
 
 	/**** Rapihel section ****/
 	.introduction-content h2 {
@@ -201,26 +207,38 @@
 		line-height: 23px;
 		margin: 0px 17px;
 		text-align: justify;
-}
-
-	/*form responsive*/
-	.contact-form .input1,
-	.contact-form .input2{
-		width: 300px;
-		height: 66px;
 	}
-	.contact-form .input3 {
-   	 width: 300px;
-	}
+	 
  	/*footer icon responsive*/
 	.footer-icon{
 		margin: 0px 20px;
 	}
 
-	 .extra-class{
+	.extra-class{
 	 	flex-direction: column;
+	}
 
-	 }
+	.skills-workflow-area hr{
+		margin: 2rem 0;
+	}
+
+	.uptoscrollbtn {
+		right: 10px;
+	}
+
+	.contact-caption h1{
+		margin-bottom: 2rem;
+	}
+
+	.view-button.text-center{
+		margin-bottom: 2rem;
+	}
+
+	.sub-content h3 {
+		line-height: 22px;
+		font-size: 2rem;
+	}
+
 }
 
 

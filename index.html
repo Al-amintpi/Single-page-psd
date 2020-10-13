@@ -28,49 +28,52 @@
 	<link rel="stylesheet" href="assets/css/responsive.css">
 	
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 
 <!-- Start Header menu area -->
-<section class="header-top-area">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-md-12 col-lg-6">
-				<div class="logo">
-					<a href="#">
-						<h2>Logo</h2>
-					</a>
-					<a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+<header class="header-top-area-section" id="navbar">
+	<div class="header-top-area">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-md-12 col-lg-6">
+					<div class="logo">
+						<a href="#">
+							<h2>Logo</h2>
+						</a>
+						<a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>
+					</div>
+				</div>
+				<div class="col-md-12 col-lg-6">
+					<nav class="menu">
+						<ul>
+							<li><a class="active" href="">start</a></li>
+							<li><a href="#about">About me</a></li>
+							<li><a href="#work">Work</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-			<div class="col-md-12 col-lg-6">
-				<nav class="menu">
-					<ul>
-						<li><a class="active" href="">start</a></li>
-						<li><a href="">About me</a></li>
-						<li><a href="">Work</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</nav>
+			<!------ banner-content ------>
+			<div class="banner-content">
+				<div class="banner-text">
+					<h1>May I introduce myself?</h1>
+					<hr>
+					<h2>Frontend Design | UI/UX Design</h2>
+				</div>
 			</div>
 		</div>
-		<!------ banner-content ------>
-		<div class="banner-content">
-			<div class="banner-text">
-				<h1>May I introduce myself?</h1>
-				<hr>
-				<h2>Frontend Design | UI/UX Design</h2>
-			</div>
-		</div>
-		<div class="single-button">
-			<a href="" class="btn-sty-1">GO AHEAD</a>
-		</div>
+		<div class="single-button text-center">
+		<a href="#" class="btn-sty-1">GO AHEAD</a>
 	</div>
-</section>
+	</div>
+	
+</header>
 <!-- End Header menu area -->
 
 
 <!----- Start Introduction area -------->
-<section class="introduction-area">
+<section class="introduction-area" id="about">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -90,10 +93,10 @@
 
 
 <!-- Start skills-workflow-area -->
-<section class="skills-workflow-area">
+<section class="skills-workflow-area" id="work">
 	<div class="container">
 		<div class="row gx-5">
-			<div class="col-md-4">
+			<div class="col-lg-4">
 				<div class="skills-workflow">
 					<div class="skills-workflow-icon text-center">
 						<i class="far fa-edit"></i>
@@ -107,7 +110,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4">
 				<div class="skills-workflow">
 					<div class="skills-workflow-icon text-center">
 						<img src="assets/img/work/1.jpg">
@@ -121,7 +124,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-4">
+			<div class="col-lg-4">
 				<div class="skills-workflow">
 					<div class="skills-workflow-icon text-center">
 						<img src="assets/img/work/2.jpg">
@@ -242,9 +245,9 @@
 				</div>
 			</div>
 			<!-- Start button subsection  -->
-			<div class="view-button text-center">
+			<div class="d-flex align-items-center view-button text-center">
 				<a href="#" class="btn-sty-1">VIEW MORE &nbsp &nbsp
-					<img src="assets/img/1.png">
+				<i class="fas fa-arrow-right"></i>
 				</a>
 			</div>
 			<!-- end button subsection  -->
@@ -255,7 +258,7 @@
 <!-------------- End Portfolion area --------->
 
 <!-- start contant section -->
-<div class="contact-area">
+<div class="contact-area" id="contact">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
@@ -263,13 +266,19 @@
 					<h1>Get in touch!</h1>
 				</div>
 				<div class="contact-form">
-					<form>
-				   <input type="text" class="input1 " name="" placeholder="name">
+				    <div class="input-box">
+					    <form class="input-form" action="#">
+					        <div class="input-f">
+					        	<input type="text" class="input1" name="" placeholder="name">
 
-					<input type="text" class="input2" name="" placeholder="Email">
-					<br>
-					 <textarea class="input3" placeholder="How can I help you??"></textarea>
-					</form>
+								<input type="text" class="input1" name="" placeholder="Email">
+					        </div>
+					
+							<div class="textarea">
+								 <textarea class="input1" rows="6" placeholder="Headerow can I help you??"></textarea>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>			
@@ -287,14 +296,22 @@
 			</div>
 		</div>
 		<div class="footer-icon">
-			<ul class="d-flex justify-content-around">
-				<li><a href="#"><img src="assets/img/icon/twitter.png"></a></li>
-				<li><a href="#"><img src="assets/img/icon/dribble.png"></a></li>
-				<li><a href="#"><img src="assets/img/icon/facebook.png"></a></li>
+			<ul class="d-flex justify-content-around ">
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
 			</ul>
 		</div>
     </div>
 </div>
+<div class="uptoscrollbtn">
+	<ul>
+		<li><a href="#"><i class="fas fa-caret-up"></i></a></li>
+	</ul>
+</div>
+ 
+	
+
 <!-- End Footer section -->
 	<!-- JS FILES -->
   	<script src="assets/js/jquery.min.js"></script>

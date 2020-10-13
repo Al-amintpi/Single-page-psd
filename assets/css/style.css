@@ -5,12 +5,11 @@ html{
 
 body{
 	overflow-x: hidden;
-	 
 	margin: 0;
 	font-size: 1.4rem;
 	font-weight: 400;
+	position: relative;
 }
-
 
 ul{
 	margin: 0;
@@ -30,7 +29,6 @@ h1{
 	color:#FFF;
 }
 
-
 h2{
 	font-size: 2rem;
 	font-weight: 400;
@@ -44,14 +42,13 @@ p {
 }
 
 .btn-sty-1 {
-	width: 23rem;
-	height: 6rem;
+	 
 	text-align: center;
 	background: #1abc9c;
 	color: #FFF;
-	padding: 1.5rem 5rem;
-	display: block;
-	font-size: 21px;
+	padding: 1.5rem 3rem;
+	display: inline-block;
+	font-size:2rem;
 	transition: .3s;
 	font-family: 'Rokkitt', serif;
 }
@@ -62,8 +59,8 @@ p {
  .header-top-area{
  	background: url('../../assets/img/bg2.jpg') no-repeat scroll 0 0 / cover;
  	padding:4rem 0;
- 	position: relative;
  	margin-bottom: 120px;
+ 	position: relative;
  }
 
 .header-top-area::before {
@@ -102,10 +99,12 @@ p {
 	z-index: 11;
 	transition: .5s;
 	font-weight: 501;
+	border-bottom: 2px solid transparent;
 }
 
 .menu ul li a:hover{
 	color:#43bca0;
+	border-color: #FFF;
 }
 
 .menu-icon{
@@ -146,24 +145,20 @@ p {
 }
   
   /*----------- single-button --------*/
- 
+ .single-button {
+	position: relative;
+	transform: translateY(73px);
+}
+
  .single-button a:hover{
+ 	 background: #FFF;
  	 color: green;
-	
  }
 
-.single-button a{
+.single-button a {
 	border: 5px solid;
-	border-color: rgba(231, 243, 240, 0.45);
+	border-color: rgba(27, 234, 182, 0.94);
 }
- .single-button {
-	position: absolute;
-	left: 42%;
-	right: 50%;
-	bottom: -24px;
-}
-
-
 
    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
   /*!!!!!!! Introduction area css !!!!!*/
@@ -182,11 +177,11 @@ p {
 .introduction-content h2 {
 	color: #6c7979;
 	line-height: 30px;
-	margin: 0px 120px;
 	font-weight: 400;
 	font-size: 18px;
+	width: 90%;
+	margin: 0 auto;
 }
-
 
 
    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -208,7 +203,6 @@ p {
 .skills-workflow-icon i {
 	color: #1abc9c;
 	font-size: 6.1rem;
-
 }
 
 .skills-workflow-title h2 {
@@ -222,11 +216,9 @@ p {
 	text-align: justify;
 }
 
-
 .skills-workflow-area hr{
 	margin: 7rem 0;
 }
-
 
 
    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -295,8 +287,7 @@ p {
 	margin-right: 20px;
 	margin-top: 20px;
 	color: #fff;
-	font-size: 2rem;
-	 
+	font-size: 2rem; 
 }
 
 .overly-icon ul li a i {
@@ -308,7 +299,6 @@ p {
 	font-family: 'Rokkitt', serif;
 	margin-top: 13.6rem;
 }
-
 
 .sub-content{
 	padding:2rem;
@@ -327,24 +317,12 @@ p {
 	color: #534848;
 }
 
- 
-
 /****** button css *****/
-.view-button a {
-    width: 28rem;
-}
-
-.view-button a:hover{
- 	 color: green;
-	
- }
 .view-button.text-center {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 7rem;
 }
-
-
 
 
    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -362,38 +340,34 @@ p {
 }
 
 .contact-form {
-	text-align: center;
-	margin-bottom: 100px;
+	 
+	margin-bottom: 5rem;
 }
 
-.contact-form .input1, .contact-form .input2 {
-	width: 370px;
-	height: 70px;
+.input-form {
+	width: 60%;
+	margin: 0 auto;
+	row-gap: 2rem;
+	flex-direction: column;
+	display: flex;
+}
+
+.input-f {
+	display: flex;
+	column-gap: 2rem;
+}
+
+
+.contact-form .input1,
+.contact-form .input2{
 	background: #e4e8e8;
 	color: #cdc7c7;
-	padding: 3rem 1.5rem;
-	font-size: 28px;
-	border: 2px solid #e4e8e8;
-	display: inline-block;
-	font-family: 'Rokkitt', serif;
-}
-
-.contact-form .input1 {
-	margin-right:3.5rem;
-}
-
-.contact-form .input3 {
-	width: 770px;
-	height: 250px;
-	margin-top: 45px;
-	background: #e4e8e8;
-	color: #cdc7c7;
+	padding: 1rem 1.5rem;
+	font-size: 20px;
 	border: 2px solid #e4e8e8;
 	font-family: 'Rokkitt', serif;
-	font-size: 30px;
-	padding: 1rem 1rem;
+	width: 100%;
 }
-
 
 
   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
@@ -428,21 +402,74 @@ p {
 	margin: 0px 168px;
 }
 
-.footer-icon ul li {
-	width: 9rem;
-	height: 9rem;
-	background: #FFF;
-	text-align: center;
-	padding-top: 20px;
-	border: 5px solid #1abc9c;
 
+.footer-icon ul li i{
+	width: 6rem;
+	height: 6rem;
+	font-size: 4rem;
+	line-height: 60px;
+	background: #fff;
 }
 
-.footer-icon ul li a{
+.footer-icon ul li a {
+	display: inline-block;
+	background: rgb(26, 188, 156, .5);
+	text-align: center;
+	border: 5px solid transparent; 
+	color:#1abc9c;
+}
 
+.footer-icon ul li i:hover:nth-child(1){
+	background: #00a7ff;
+	color:#FFF;
+}
+
+.footer-icon ul li i:hover:nth-child(2){
+	 background: #c02461;
+	 color:#FFF;
+}
+
+.footer-icon ul li i:hover:nth-child(3){
+	background: #00a8ff;
+	color:#FFF;
 }
 
 
 button:focus {
     outline: none;
 }
+
+.view-button a:hover {
+	background: #297465;
+	color: #fff;
+}
+
+/* scroll btn */
+
+.uptoscrollbtn {
+	color: #999292;
+	position: fixed;
+	bottom: 0;
+	right: 222px;
+	cursor: pointer;
+	z-index: 999; 
+	display: none;
+}
+
+.uptoscrollbtn ul li i {
+	font-size: 4rem;
+	width: 5rem;
+	height: 5rem;
+	background: black;
+	text-align: center;
+	border-radius: 5px;
+	color: #fff;
+	line-height: 47px;
+}
+
+
+.uptoscrollbtn ul li i:hover{
+	background:gray;
+	color:black;
+}
+
