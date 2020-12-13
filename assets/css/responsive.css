@@ -1,8 +1,10 @@
-@media all and (min-width: 992px){
+ @media all and (min-width: 992px){
 	.banner-content hr {
 	  margin: 8px 190px;
 	}
 	.menu ul{
+		display: -webkit-box !important;
+		display: -ms-flexbox !important;
 		display: flex !important;
 	}
 }
@@ -24,8 +26,13 @@
 	}
 
 	.menu ul {
-		justify-content: start;
-		flex-direction: column;
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		background: #e1cbcb6b;
 		text-align: center;
 		position: relative;
@@ -45,9 +52,15 @@
 	}
 
 	.logo{
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
 	}	
 
 	 
@@ -110,7 +123,10 @@
 	}
 
 	.input-f {
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		row-gap: 1rem;
 	}
 }
@@ -215,7 +231,10 @@
 	}
 
 	.extra-class{
-	 	flex-direction: column;
+	 	-webkit-box-orient: vertical;
+	 	-webkit-box-direction: normal;
+	 	    -ms-flex-direction: column;
+	 	        flex-direction: column;
 	}
 
 	.skills-workflow-area hr{
